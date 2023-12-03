@@ -1,0 +1,143 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}            
+body{
+    background-image: url("2.jpg");
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}  
+.Container{
+    max-width: 500px;
+    width: 100%;
+    background: none;
+    margin: 25px auto;
+    margin-top: 120px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 100px;
+    backdrop-filter: blur(5px) ;
+    border-color: black;
+}
+
+.Container .title{
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 25px;
+color: rgb(255, 55, 0);
+text-transform: uppercase;
+text-align: center;
+}
+.Container .form,
+.Login.form
+{
+    width: 100%;
+}
+.Container .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.Container .form .input_field label{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+    
+}
+.Container .form .input_field .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+.Container .form .input_box{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.Container .form .input_box label{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: grey;
+}
+.Container .form .input_box .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.Container .form .input_field .custom_select
+{position: relative;
+ width: 100%;
+ height: 37px;
+}
+.Container .form .input_field .custom_select select
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border: 1px solid rgb(14, 12, 12);
+    border-radius: 3px;
+    outline: none;
+}
+.Container .form .input_field .custom_select:before
+{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid black;
+    border-color: black transparent transparent transparent;
+    pointer-events: none;
+}
+.Container .form .input_field .input:focus,
+.Container .form .input_field select:focus
+{
+    border: 1px solid rgb(27, 22, 27);
+}
+.Container .form .input_field .btn
+{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.Container .form .input_field:last-child
+{
+    margin-bottom: 0;
+}
+.Container .form .input_field .btn:hover
+{
+    background: purple;
+}
+@media (max-width: 420px)
+{
+    .Container .form .input_field
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Container .form .input_field label
+    {
+    margin-bottom: 5px;
+    }
+}  
